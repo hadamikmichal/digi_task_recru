@@ -1,9 +1,9 @@
-@use "../../node_modules/bootstrap/scss/bootstrap";
+@import "global/variables";
+@import "global/bootstrap";
+@import "global/normalize";
+@import "global/reset";
+@import "global/base";
+@import "global/general";
 
-@use "global/_variables";
-@use "global/_normalize";
-@use "global/_reset";
-@use 'global/_base';
 
-
-@use "parts/pricing_page/page";
+@import "parts/pricing_page/page";

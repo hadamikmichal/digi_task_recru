@@ -1,0 +1,22 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px
+);
+
+$grid-gutter-width: 20px;
+
+
+$form-range-thumb-bg: #ffffff;
+$form-range-thumb-border: 0.125rem solid $color-primary;
+$form-range-thumb-width: 1.25rem;
+$form-range-track-bg: $color-border;
+$form-check-input-checked-color: $color-primary;
+$form-check-input-checked-bg-color: $color-primary;
+$form-check-input-bg: $color-border;
+
+$form-check-input-indeterminate-color: red;
+$form-check-input-indeterminate-bg-color: red;
+$form-check-input-indeterminate-border-color: red;
