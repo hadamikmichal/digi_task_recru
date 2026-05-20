@@ -8,31 +8,108 @@
         <meta name="robots" content="noindex">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="dist/app.css">
         <script src="dist/app.js" defer></script>
     </head>
 
     <body>
         <main>
-            <!-- Hero section START -->
             <section class="hero-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            Hero section
+                            <h1 class="mb-4 fw-bold text-center">Przejrzyste ceny bez ukrytych opłat</h1>
+                            <p class="text-center">Płać tylko za aktywnych kursantów, bez zobowiązań długoterminowych. <br>Wybierz moduły, których potrzebujesz i oblicz rzeczywisty koszt dla swojej szkoły.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Hero section END -->
+            
 
             <!-- Pricing section START -->
             <section class="pricing-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            Pricing section
+                <div class="container cards__wrapper">
+                    <div class="card">
+                        <div class="box-range">
+                            <p class="fs-5 fw-bold">Wybierz lub wpisz liczbę słuchaczy Twojej szkoły: <span class="counter" id="counter">200</span></p>
+                            <label for="customRange1" class="form-label">200</label>
+                            <input type="range" class="form-range" id="customRange1">
+                            <hr>
                         </div>
+                        <div class="box-prices">
+                            <p class="fs-5 fw-bold">Wybierz moduły, z których chcesz korzystać:</p>
+                            <div class="box-prices__wrapper">
+                                <div class="box-prices__mandatory w-50">
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">E-dziennik</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Sekretariat</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                    <div class="box-prices__info">
+                                        <span>Sekretariat i E-dziennik to serce systemu, które otrzymujesz na start. Rozbuduj swój system o dodatkowe moduły i zwiększ możliwości swojej szkoły.</span>
+                                        <a href="#">Dowiedz się więcej o modułach</a>
+                                    </div>
+                                </div>
+                                <div class="box-prices__optional w-50">
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Płatności online</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Finanse</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">E-Learning</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Nauczanie online</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Rejestracja</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">CRM</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <label class="form-check-label fw-medium" for="flexSwitchCheckChecked">Medioteka</label>
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__sum-wrapper">
+                        <div class="card card__counts">
+                            <p class="fs-5 fw-bold mb-0">Twoje koszty korzystania:</p>
+                            <hr>
+                            <div class="card__box">
+                                <p class="mb-0 d-flex justify-content-between">Liczba słuchaczy: <span>200</span></p>
+                                <p class="mb-0 d-flex justify-content-between">Miesięczna cena za słuchacza: <span>305,00 zł</span></p>
+                            </div>
+                            <hr>
+                            <div class="card__summary">
+                                <p class="mb-0 fs-4 fw-bold d-flex justify-content-between">Miesięczny koszt brutto: <span>305,00 zł</span></p>
+                                <small class="d-flex justify-content-between">Miesięczny koszt netto: <span>200,00 zł</span></small>
+                            </div>
+                        </div>
+                        <a href="#" class="btn mx-auto mt-4">
+                            Wypróbuj za darmo przez 14dni
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.46875 17.9062C6.28125 17.9062 6.125 17.8438 5.96875 17.7188C5.6875 17.4375 5.6875 17 5.96875 16.7188L12.5312 10L5.96875 3.3125C5.6875 3.03125 5.6875 2.59375 5.96875 2.3125C6.25 2.03125 6.6875 2.03125 6.96875 2.3125L14.0313 9.5C14.3125 9.78125 14.3125 10.2187 14.0313 10.5L6.96875 17.6875C6.84375 17.8125 6.65625 17.9062 6.46875 17.9062Z" fill="white"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>

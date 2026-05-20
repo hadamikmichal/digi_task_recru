@@ -1,0 +1,85 @@
+.hero-section {
+    padding-top: 5rem;
+}
+
+.pricing-section {
+    background-color: #85C6FF66;
+    background: #85C6FF66;
+    padding: 40px 0;
+    background: radial-gradient(circle,rgba(133, 198, 255, 0.1) 100%, rgba(255, 255, 255, 1) 0%);
+}
+
+.counter {
+    background-color: $color-light;
+    color: $color-primary;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+
+.box-range {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-prices {
+    &__info {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        background: $color-bg;
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__mandatory,
+    &__optional {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.cards__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    hr {
+        margin: 0;
+    }
+
+    &__box {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__counts {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__sum-wrapper {
+        height: 100%;
+        max-width: 520px;
+        width: 100%;
+    }
+}
